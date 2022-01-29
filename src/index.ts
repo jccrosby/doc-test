@@ -1,5 +1,4 @@
-import * as Math from './lib/math';
-
+import { add } from './lib/math';
 export default {
-    Math
+    Math: { add },
 };
