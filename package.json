@@ -1,24 +1,28 @@
 {
-  "name": "doc-test",
-  "version": "0.0.1",
-  "description": "Test repo for doc-in-source workflow",
-  "main": "src/index.ts",
-  "repository": "https://github.com/jccrosby/doc-test.git",
-  "author": "John Crosby <john@crsby.com>",
-  "license": "MIT",
-  "private": true,
-  "devDependencies": {
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
-    "@types/jest": "^27.4.0",
-    "jest": "^27.4.7",
-    "jest-junit": "^13.0.0",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.5"
-  },
-  "scripts": {
-    "watch": "tsc --build --watch",
-    "build": "rm -rf ./dist && tsc --build",
-    "test": "jest"
-  }
+    "name": "doc-test",
+    "version": "0.0.1",
+    "description": "Test repo for doc-in-source workflow",
+    "main": "src/index.ts",
+    "repository": "https://github.com/jccrosby/doc-test.git",
+    "author": "John Crosby <john@crsby.com>",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.11",
+        "@babel/preset-typescript": "^7.16.7",
+        "@types/jest": "^27.4.0",
+        "fs-extra": "^10.0.0",
+        "globby": "^13.1.0",
+        "jest": "^27.4.7",
+        "jest-junit": "^13.0.0",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.5"
+    },
+    "scripts": {
+        "watch": "tsc --build --watch",
+        "build": "rm -rf ./dist && tsc --build",
+        "test": "jest",
+        "mlbdocs": "node ./bin/mlbdocs.js"
+    }
 }
