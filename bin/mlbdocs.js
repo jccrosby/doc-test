@@ -20,7 +20,7 @@ const copyDirectory = (srcDir, destDir) => {
     });
     mlbDocPaths.forEach((docPath) => {
         let destPath = docPath.replace('__mlbdoc__/', '');
-        destPath = destPath.replace('src', '__mlbdocs__');
+        destPath = destPath.replace('src', 'docs');
         copyDirectory(path.join(process.cwd(), docPath), path.join(process.cwd(), destPath));
     });
     //copyDirectory(mlbDocPaths);
