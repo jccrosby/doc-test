@@ -3,10 +3,8 @@ import path from 'path';
 import { globby } from 'globby';
 
 const copyDirectory = (srcDir, destDir) => {
-    console.log(`COPY: `, srcDir, '-->', destDir);
-    //copySync(source, destination, overwrite, callback);
-
     try {
+        //copySync(source, destination, overwrite, callback);
         fse.copySync(srcDir, destDir);
         console.log('Success!', destDir);
     } catch (error) {
