@@ -1,8 +1,20 @@
-## Welcome to GitHub Pages
+## doc-test
 
-You can use the [editor on GitHub](https://github.com/jccrosby/doc-test/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+POC repo to test out source-as-docs markdown documentation + site.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Usage
+
+1. Check out the repo
+2. Install dependencies `yarn`
+3. For any new directory add a child directory named `__mlbdoc__`
+4. All Markdown documentation should be created in these directories for the associated source files
+
+
+Building the docs: `yarn mlbdoc`
+
+Previewing the docs: `yarn mlbdoc:preview`
+
+
 
 ### Markdown
 
@@ -27,11 +39,3 @@ Syntax highlighted code block
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jccrosby/doc-test/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

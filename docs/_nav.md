@@ -1,4 +1,2 @@
-
-- [Home](/)
-  - [index.ts](/index)
-- [lib/math](lib/math)
+- [Index](./index.md)
+- [Math](./lib/math.md)

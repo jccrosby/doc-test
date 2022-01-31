@@ -12,6 +12,7 @@
         "@babel/preset-env": "^7.16.11",
         "@babel/preset-typescript": "^7.16.7",
         "@types/jest": "^27.4.0",
+        "docsify-cli": "^4.4.3",
         "fs-extra": "^10.0.0",
         "globby": "^13.1.0",
         "jest": "^27.4.7",
@@ -23,6 +24,7 @@
         "watch": "tsc --build --watch",
         "build": "rm -rf ./dist && tsc --build",
         "test": "jest",
-        "mlbdocs": "node ./bin/mlbdocs.js"
+        "mlbdoc": "node ./bin/mlbdocs.js",
+        "mlbdoc:preview": "docsify serve docs"
     }
 }
